@@ -1,0 +1,22 @@
+<html>
+    <body bgcolor=#d4a3ae>
+
+        <center>
+
+        <h1> Engine Health Prediction </h1><br>
+        
+        <form method="POST", action="{{url_for('home')}}">
+           <b> Engine rpm :  <input type="text", name='Engine_rpm', placeholder="enter 1"> <br><br>
+            Lub oil pressure :  <input type="text", name='Lub_oil_pressure', placeholder="enter 2"> <br><br>
+            Fuel pressure :  <input type="text", name='Fuel_pressure', placeholder="enter 3"> <br><br>
+            Coolant pressure : <input type="text", name='Coolant_pressure', placeholder="enter 4"> <br><br>
+            lub oil temp :  <input type="text", name='lub_oil_temp', placeholder="enter 3"> <br><br>
+            Coolant temp :  <input type="text", name='Coolant_temp', placeholder="enter 3"> <br><br><br></b>
+            <input type="submit" , value='predict!' >
+        </form>
+ 
+        
+    </center>
+
+    </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>Engine Health Predictive Maintenance</title>
+    
+
+<style>
+    
+ body {
+font-family: Arial, sans-serif;
+color:  #fff;
+background-image: url("static/engine_1.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: top center;
+backdrop-filter: blur(3px);
+font-weight: 300;
+text-align: center;
+margin: 0;
+line-height: 1.5;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100%;
+padding: 50px;
+box-sizing: border-box;   
+}
+
+img {
+   width: 15cm;
+   height: 10cm;
+   background-blend-mode: multiply;
+   border-radius: 25px;
+ }
+</style>
+</head>
+        
+<body>
+    <center>
+    <h1>  ENGINE CONDITION :  </h1>
+    
+    {%if data == 0%}
+    <h1>Bad Condition</h1> 
+    <p>Your engine need maitenance. Schedule a service appointment and get your engine checked soon to avoid further problems.</p>
+        <img src="static\engine_bad_cond.jpg" alt="Engine Bad Condition"> 
+       
+
+    {%else%}
+    <h1>Good Condition</h1>
+        <img src="static\engine_good_cond.jpg" alt="Engine Good Condition">
+
+    
+    {%endif%}
+
+        <br><br>
+    <a href='engine'>go back to previous page</a>
+
+</center>
+
+</body>
+
+</html>
+
+
+
+
+
+
